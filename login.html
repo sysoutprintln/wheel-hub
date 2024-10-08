@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wHeel Hub - Login</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/additional image/wheel-hub.png">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/splash.css">
+</head>
+
+<body>
+    <div class="splash-screen">
+        <img src="Assets/additional image/your-logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="container">
+        <header>
+            <img src="Assets/additional image/your-logo.png" alt="Wheel Hub Logo" class="logo-acc">
+        </header>
+        <h1>Login</h1>
+
+        <form id="login-form">
+            <label for="username-email"><b>Username or Email:</b></label>
+            <input type="text" id="username-email" name="username-email" required placeholder="Enter your username or email...">
+
+            <label for="password"><b>Password:</b></label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password...">
+
+            <button type="submit">Login</button>
+        </form>
+
+        <footer>
+            <a href="register.html">Register Page</a>
+            <p>COPYRIGHT © WHEEL HUB. ALL RIGHTS RESERVED.</p>
+        </footer>
+    </div>
+
+    <div id="error-notification" class="notification error">
+        <span class="icon">✖</span>
+        <h2>Error!</h2>
+        <p></p>
+        <button onclick="hideErrorNotification()">Ok</button>
+    </div>
+
+    <div id="success-notification" class="notification success">
+        <span class="icon">✔</span>
+        <h2>Welcome!</h2>
+        <p>Login successful! You will be redirected to the homepage.</p>
+        <button onclick="hideSuccessNotification()">Ok</button>
+    </div>
+
+    <script src="/js/login.js"></script>
+    <script src="/js/splash.js"></script>
+</body>
+
+</html>

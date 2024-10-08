@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px 450px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container img {
+    width: 20%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header .logo-acc {
+    max-width: 150px;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+input, select, button {
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+input, select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 12px; 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; 
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    display: none; 
+    z-index: 1000; 
+    color: black;
+}
+
+.notification.error {
+    border: 2px solid #f44336;
+}
+
+.notification.success {
+    border: 2px solid #4CAF50;
+}
+
+.notification .icon {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.notification button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #666;
+    font-size: 12px;
+}
